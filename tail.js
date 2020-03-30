@@ -6,11 +6,13 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const head = function(arr) {
-  return arr[0];
+const tail = function(arr) {
+  return arr.slice(1);
 };
 
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head([1]), 1);
-assertEqual(head([]), undefined);
+const words = ["Yo Yo", "Lighthouse", "Labs"];
+tail(words);
+assertEqual(words.length, 3);
+
+assertEqual(tail([1])[0], undefined);
+assertEqual(tail([])[0], undefined);
