@@ -18,8 +18,8 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertArraysEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => should PASS
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should PASS
+assertArraysEqual([1, 2, 3], [3, 2, 1]); // => should FAIL
 
-assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => should PASS
-assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => should PASS
+assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => should PASS
+assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => should FAIL
