@@ -1,9 +1,8 @@
-// middleTest.js
+// test/middleTest.js
 
 const assert = require('chai').assert;
 const middle = require('../middle');
 
-// TEST CODE
 describe("#middle", () => {
 
   it("returns an empty array for [1]", () => {
