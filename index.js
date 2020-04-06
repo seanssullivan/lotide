@@ -14,16 +14,16 @@ const tail = require('./tail');
 const without = require('./without');
 
 module.exports = {
-  countLetters: countLetters,
-  countOnly: countOnly,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  flatten: flatten,
-  head: head,
-  letterPositions: letterPositions,
-  map: map,
-  middle: middle,
-  takeUntil: takeUntil,
-  tail: tail,
-  without: without
+  countLetters,
+  countOnly,
+  findKey,
+  findKeyByValue,
+  flatten,
+  head,
+  letterPositions,
+  map,
+  middle,
+  takeUntil,
+  tail,
+  without
 }
