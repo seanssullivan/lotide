@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@seanssullivan/lotide",
   "version": "1.0.0",
-  "description": "A clone of the lodash JavaScript library, developed during the Lighthouse Labs Web Development Bootcamp.",
+  "description": "A mini clone of the lodash JavaScript library, developed during the Lighthouse Labs Web Development Bootcamp.",
   "main": "",
   "directories": {
     "test": "test"
