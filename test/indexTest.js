@@ -53,4 +53,12 @@ describe("#index", () => {
     assert.property(_, 'without');
   });
 
+  it("returns object which includes eqArrays()", () => {
+    assert.property(_, 'eqArrays');
+  });
+
+  it("returns object which includes eqObjects()", () => {
+    assert.property(_, 'eqObjects');
+  });
+
 });

@@ -12,6 +12,8 @@ const middle = require('./middle');
 const takeUntil = require('./takeUntil');
 const tail = require('./tail');
 const without = require('./without');
+const eqArrays = require('./eqArrays');
+const eqObjects = require('./eqObjects');
 
 module.exports = {
   countLetters,
@@ -25,5 +27,7 @@ module.exports = {
   middle,
   takeUntil,
   tail,
-  without
+  without,
+  eqArrays,
+  eqObjects
 }
