@@ -28,11 +28,13 @@ const without = function(source, itemsToRemove) {
   return itemsRetained;
 };
 
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]);
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+module.exports = without;
 
-assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
-assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
-assertArraysEqual(without(["javascript", "with", "lighthouse", "labs", "rules"], ["javascript", "with"]), ["lighthouse", "labs", "rules"]);
-assertArraysEqual(without(["one", "two", undefined, "three", undefined, "four"], [undefined]), ["one", "two", "three", "four"]);
+// const words = ["hello", "world", "lighthouse"];
+// without(words, ["lighthouse"]);
+// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+
+// assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
+// assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
+// assertArraysEqual(without(["javascript", "with", "lighthouse", "labs", "rules"], ["javascript", "with"]), ["lighthouse", "labs", "rules"]);
+// assertArraysEqual(without(["one", "two", undefined, "three", undefined, "four"], [undefined]), ["one", "two", "three", "four"]);

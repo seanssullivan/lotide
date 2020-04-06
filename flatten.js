@@ -30,5 +30,7 @@ const flatten = function(nestedArrays) {
   return flattenedArray;
 };
 
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
-assertArraysEqual(flatten([["hello", "world"], "lighthouse"]), ["hello", "world", "lighthouse"]);
+module.exports = flatten;
+
+// assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
+// assertArraysEqual(flatten([["hello", "world"], "lighthouse"]), ["hello", "world", "lighthouse"]);

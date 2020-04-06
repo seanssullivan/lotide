@@ -26,11 +26,13 @@ const map = function(array, callback) {
   return results;
 }
 
-const words = ["ground", "control", "to", "major", "tom"];
+module.exports = map;
 
-const results1 = map(words, word => word[0]);
-console.log(results1);
+// const words = ["ground", "control", "to", "major", "tom"];
 
-assertArraysEqual(map([1, 2, 3, 4, 5], n => n ** 2), [1, 4, 9, 16, 25]);
-assertArraysEqual(map(["1", "to", "and", "four"], word => word.length), [1, 2, 3, 4]);
-assertArraysEqual(map([{ name: "one"}, { name: "two" }, { name: "three" }], obj => obj.name), ["one", "two", "three"]);
+// const results1 = map(words, word => word[0]);
+// console.log(results1);
+
+// assertArraysEqual(map([1, 2, 3, 4, 5], n => n ** 2), [1, 4, 9, 16, 25]);
+// assertArraysEqual(map(["1", "to", "and", "four"], word => word.length), [1, 2, 3, 4]);
+// assertArraysEqual(map([{ name: "one"}, { name: "two" }, { name: "three" }], obj => obj.name), ["one", "two", "three"]);
